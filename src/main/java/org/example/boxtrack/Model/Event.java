@@ -1,4 +1,4 @@
-package org.example.boxtrack.model;
+package org.example.boxtrack.Model;
 
 public class Event {
     // Fields
