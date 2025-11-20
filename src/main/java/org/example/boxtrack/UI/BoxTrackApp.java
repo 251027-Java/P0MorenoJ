@@ -4,6 +4,8 @@ import org.example.boxtrack.Model.Boxer;
 import org.example.boxtrack.Model.Coach;
 import org.example.boxtrack.Model.Event;
 import org.example.boxtrack.Model.Match;
+import org.example.boxtrack.Repository.IRepository;
+import org.example.boxtrack.Repository.PostgreSQLRepository;
 
 import java.time.LocalDate;
 
@@ -70,5 +72,10 @@ public class BoxTrackApp {
 
         System.out.println(e1);
         System.out.println(e2);
+
+        System.out.println();
+
+        IRepository repo =  new PostgreSQLRepository();
+
     }
 }
