@@ -72,10 +72,21 @@ public class BoxTrackApp {
 
         System.out.println(e1);
         System.out.println(e2);
-
         System.out.println();
 
         IRepository repo =  new PostgreSQLRepository();
+
+        //repo.createBoxer(b1);
+        Boxer newBoxer1 = repo.readBoxer(1);
+        System.out.println(newBoxer1);
+
+        //repo.createBoxer(b2);
+        Boxer newBoxer2 = repo.readBoxer(2);
+        System.out.println(newBoxer2);
+
+        newBoxer1.setWeightClass("Super Middleweight");
+        repo.updateBoxer(newBoxer1);
+        System.out.println("Boxer updated successfully!");
 
     }
 }
